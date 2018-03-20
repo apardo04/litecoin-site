@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>LTC Site</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <script src="javascript/jquery-3.2.1.min.js"></script>
+  <script src="javascript/script.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Chart.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+</head>
+<body>
+<div id="banner" class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">&nbsp;</div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-12 centered">
+          <img src="images/litecoin.png" id="logo"/>
+          <table>
+            <tr>
+              <td id="usd_price"></td>
+              <td>1h Change: <span id="change_1h" class="change"></span></td>
+              <td id="btc_price"></td>
+              <td id="market_cap"></td>
+              <td id="volume"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>24h Change: <span id="change_24h" class="change"></span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>7d Change: <span id="change_7d" class="change"></span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+          <div class="col-md-6 col-social-container">
+            <a class="twitter-timeline" href="https://twitter.com/litecoin?ref_src=twsrc%5Etfw">Tweets by litecoin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          <div class="col-md-6 col-social-container">
+            <script src="https://www.reddit.com/r/Litecoin/.embed?limit=20&amp;t=all&amp;bordercolor=000" type="text/javascript"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

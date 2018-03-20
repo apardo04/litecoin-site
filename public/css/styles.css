@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    font-size: 18px;
+}
+#logo {
+    width:59%;
+}
+table {
+    width: 100%;
+}
+tbody {
+    text-align: center;
+    font-size: 18px;
+}
+td, th {
+    padding-right: 10px;
+}
+.change {
+    color: red;
+}
+.col-social-container {
+    height: 600px;
+    overflow-y: scroll;
+}
+@media only screen and (max-width: 600px) {
+    #logo {
+        width:100%;
+    }
+}

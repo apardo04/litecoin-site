@@ -3,3 +3,7 @@ Need to add:
 Litecoin tweets
 Sub Reddit
 Google Trends
+
+btc font for btc price of ltc
+
+setup node script for 'npm start' that uses nodemon
