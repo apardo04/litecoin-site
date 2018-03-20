@@ -1,5 +1,5 @@
 {
-  "name": "express-static-files",
+  "name": "litecoin-site",
   "version": "1.0.0",
   "description": "Configure Express to serve static files",
   "main": "app.js",
@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fullstacktraining/express-static-files.git"
+    "url": "git+https://github.com/apardo04/litecoin-site"
   },
   "keywords": [
     "node.js",
     "express",
     "MEAN"
   ],
-  "author": "Full Stack Training",
-  "license": "ISC",
+  "author": "Adrian Pardo",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/fullstacktraining/express-static-files/issues"
+    "url": "https://github.com/apardo04/litecoin-site/issues"
   },
-  "homepage": "https://github.com/fullstacktraining/express-static-files#readme",
+  "homepage": "https://github.com/apardo04/litecoin-site#readme",
   "dependencies": {
     "express": "^4.13.3"
   },
