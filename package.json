@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/apardo04/litecoin-site#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "google-trends-api": "^4.6.1"
   },
   "devDependencies": {
     "nodemon": "^1.17.2"

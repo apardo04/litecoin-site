@@ -34,5 +34,6 @@ $(document).ready(function() {
     $('.closeDonations').click(function() {
         $('#donationsModal').hide();
     });
+
 });
 
