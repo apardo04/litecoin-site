@@ -16,43 +16,70 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 </head>
 <body>
-<div id="banner" class="container-fluid">
-  <div class="row">
-    <div class="col-md-2">&nbsp;</div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-md-12 centered">
-          <img src="images/litecoin.png" id="logo"/>
-          <table>
-            <tr>
-              <td id="usd_price"></td>
-              <td>1h Change: <span id="change_1h" class="change"></span></td>
-              <td id="btc_price"></td>
-              <td id="market_cap"></td>
-              <td id="volume"></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>24h Change: <span id="change_24h" class="change"></span></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>7d Change: <span id="change_7d" class="change"></span></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
-          <div class="col-md-6 col-social-container">
-            <a class="twitter-timeline" href="https://twitter.com/litecoin?ref_src=twsrc%5Etfw">Tweets by litecoin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
-          <div class="col-md-6 col-social-container">
-            <script src="https://www.reddit.com/r/Litecoin/.embed?limit=20&amp;t=all&amp;bordercolor=000" type="text/javascript"></script>
-          </div>
+<div class="row">
+  <div class="col-md-2">&nbsp;</div>
+  <div class="col-md-8">
+    <div class="row">
+      <div class="col-md-12 centered">
+        <img src="images/litecoin.png" id="logo"/>
+        <!-- Stat Feed Menu -->
+        <table>
+          <tr>
+            <td id="usd_price"></td>
+            <td>1h Change: <span id="change_1h" class="change"></span></td>
+            <td id="btc_price"></td>
+            <td id="market_cap"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>24h Change: <span id="change_24h" class="change"></span></td>
+            <td></td>
+            <td>Market Rank: <span id="rank"></span></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>7d Change: <span id="change_7d" class="change"></span></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <!-- Twitter / Reddit Feeds -->
+        <div class="col-md-6 col-social-container">
+          <a class="twitter-timeline" href="https://twitter.com/litecoin?ref_src=twsrc%5Etfw">Tweets by litecoin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
+        <div class="col-md-6 col-social-container">
+          <script src="https://www.reddit.com/r/Litecoin/.embed?limit=20&amp;t=all&amp;bordercolor=000" type="text/javascript"></script>
+        </div>
+        <!-- Mid Section -->
+        <br><br>
+        <div>
+          <a href="https://litecoin.com/services#merchants">Where to spend?</a>
+        </div>
+        <div>
+          <a href="https://litecoin.com/services#purchase_litecoins">How to acquire?</a>
+        </div>
+      </div>
+      <!-- Footer -->
+      <button id="donationButton" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#donationsModal">Donate To Help Support This Site</button>
+      <br>All Rights Reserved | <a href="mailto:support@litecoin.hub">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade in" id="donationsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display:none;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close closeDonations" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-tv"></i> Help Cover Server Costs</h4>
+      </div>
+      <div class="modal-body">
+          <h4>Litecoin</h4>
+          <img src="images/ltcDonations.png"><br><br>
+          LUYTLBUXg58RU82jN582Edks1Kwr21VJna
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default closeDonations" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
