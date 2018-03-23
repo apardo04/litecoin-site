@@ -16,8 +16,8 @@ $(document).ready(function() {
     $('#change_7d').text(change_7d + "%")
     $('#change_24h').text(change_24h + "%")
     $('#change_1h').text(change_1h + "%")
-    $('#btc_price').text("BTC: " + ltcData[0].price_btc)
-    $('#market_cap').text("Market Cap: " + cap + "B")
+    $('#btc_price').text("BTC: " + ltcData[0].price_btc.slice(0,-2))
+    $('#market_cap').text(cap + "B")
     $('#rank').text(ltcData[0].rank)
 
     if (change_7d >= 0)
