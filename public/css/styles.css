@@ -21,11 +21,19 @@ td, th {
     height: 600px;
     overflow-y: scroll;
 }
+#trends {
+    padding-top: 10px;
+}
 button#donationButton {
     margin-top: 10px;
 }
 @media only screen and (max-width: 600px) {
     #logo {
         width:100%;
+    }
+    td {
+        width: 100%;
+        display: block;
+        padding-bottom: 3px;
     }
 }
