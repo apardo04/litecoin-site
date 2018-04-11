@@ -12,18 +12,18 @@ $(document).ready(function() {
 
     let cap = ltcData[0].market_cap_usd.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.").slice(0, -11);
 
-    $('#usd_price').text("USD: $" + price)
-    $('#change_7d').text(change_7d + "%")
-    $('#change_24h').text(change_24h + "%")
-    $('#change_1h').text(change_1h + "%")
-    $('#btc_price').text("BTC: " + ltcData[0].price_btc.slice(0,-2))
-    $('#market_cap').text(cap + "B")
-    $('#rank').text(ltcData[0].rank)
+    $('#usd_price').text("USD: $" + price);
+    $('#change_7d').text(change_7d + "%");
+    $('#change_24h').text(change_24h + "%");
+    $('#change_1h').text(change_1h + "%");
+    $('#btc_price').text("BTC: " + ltcData[0].price_btc.slice(0,-2));
+    $('#market_cap').text(cap + "B");
+    $('#rank').text(ltcData[0].rank);
 
     if (change_7d >= 0)
-        $('#change_7d').css('color', '#40ba00')
+        $('#change_7d').css('color', '#40ba00');
     if (change_24h >= 0)
-        $('#change_24h').css('color', '#40ba00')
+        $('#change_24h').css('color', '#40ba00');
     if (change_1h >= 0)
         $('#change_1h').css('color', '#40ba00')
 
@@ -35,5 +35,9 @@ $(document).ready(function() {
         $('#donationsModal').hide();
     });
 
+    if ($(window).width() <= 600) {
+        $('#1h_row').insertBefore($('#7d_row'));
+        $('#24h_row').insertBefore($('#7d_row'));
+    }
 });
 

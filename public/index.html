@@ -1,8 +1,22 @@
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102260073-3"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-102260073-3');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Lite Central</title>
+  <title>LiteCentral</title>
+  <meta name="description" content="Litecoin Hub for news, twitter feed, subreddit feed, live Google trends charts">
+  <meta name="keywords" content="Litecoin | LTC | News | Trends | Twitter | Reddit | Hub">
+  <meta name="author" content="Adrian Pardo">
+  <link rel="canonical" href="http://letsgocoo.com" />
   <link rel="shortcut icon" href="images/litecoinLogo.png">
   <script src="javascript/jquery-3.2.1.min.js"></script>
   <script src="javascript/script.js"></script>
@@ -26,19 +40,19 @@
         <table>
           <tr>
             <td id="usd_price"></td>
-            <td>&nbsp;&nbsp;1h Change: <span id="change_1h" class="change"></span></td>
+            <td id="1h_row">&nbsp;&nbsp;1h Change: <span id="change_1h" class="change"></span></td>
             <td id="btc_price"></td>
             <td>Market Cap: <span id="market_cap"></span></td>
           </tr>
           <tr>
             <td></td>
-            <td>24h Change: <span id="change_24h" class="change"></span></td>
+            <td id="24h_row">24h Change: <span id="change_24h" class="change"></span></td>
             <td></td>
             <td>Market Rank: <span id="rank"></span></td>
           </tr>
           <tr>
             <td></td>
-            <td>&nbsp;&nbsp;7d Change: <span id="change_7d" class="change"></span></td>
+            <td id="7d_row">&nbsp;&nbsp;7d Change: <span id="change_7d" class="change"></span></td>
             <td></td>
             <td></td>
           </tr>

@@ -11,7 +11,7 @@ table {
     font-size: 18px;
     text-align: center;
 }
-td, th {
+td {
     width: 25%;
 }
 .change {
@@ -32,7 +32,7 @@ button#donationButton {
         width:100%;
     }
     td {
-        width: 100%;
+        width: 100% !important;
         display: block;
         padding-bottom: 3px;
     }
