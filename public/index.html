@@ -56,13 +56,69 @@
             <td></td>
           </tr>
         </table>
+        <table style="margin-top:25px;">
+          <tr>
+            <td><button type="button" class="btn btn-dark" data-toggle="button" id="usd-chart">LTC/USD Chart</button></td>
+            <td><button type="button" class="btn btn-dark" data-toggle="button" id="btc-chart">LTC/BTC Chart</button></td>
+          </tr>
+        </table>
         <br>
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container" id="ltc-usd-chart" style="display:none;">
+          <div id="tradingview_8c3d9"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/COINBASE-LTCUSD/" rel="noopener" target="_blank"><span class="blue-text">LTCUSD</span> <span class="blue-text">chart</span> by TradingView</a></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+          <script type="text/javascript">
+              new TradingView.widget(
+                  {
+                      "autosize": true,
+                      "symbol": "COINBASE:LTCUSD",
+                      "interval": "D",
+                      "timezone": "Etc/UTC",
+                      "theme": "Light",
+                      "style": "1",
+                      "locale": "en",
+                      "toolbar_bg": "#f1f3f6",
+                      "enable_publishing": false,
+                      "allow_symbol_change": true,
+                      "container_id": "tradingview_8c3d9"
+                  }
+              );
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
+
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container" id="ltc-btc-chart" style="display:none;">
+          <div id="tradingview_671f6"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/COINBASE-LTCBTC/" rel="noopener" target="_blank"><span class="blue-text">LTCBTC</span> <span class="blue-text">chart</span> by TradingView</a></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+          <script type="text/javascript">
+              new TradingView.widget(
+                  {
+                      "autosize": true,
+                      "symbol": "COINBASE:LTCBTC",
+                      "interval": "D",
+                      "timezone": "Etc/UTC",
+                      "theme": "Light",
+                      "style": "1",
+                      "locale": "en",
+                      "toolbar_bg": "#f1f3f6",
+                      "enable_publishing": false,
+                      "allow_symbol_change": true,
+                      "container_id": "tradingview_671f6"
+                  }
+              );
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
+
         <!-- Twitter / Reddit Feeds -->
         <div class="col-sm-4 col-social-container">
-          <a class="twitter-timeline" href="https://twitter.com/litecoin?ref_src=twsrc%5Etfw">Tweets by litecoin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" href="https://twitter.com/litecoin?ref_src=twsrc%5Etfw" target="_blank">Tweets by litecoin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div class="col-sm-4 col-social-container">
-          <script src="https://www.reddit.com/r/Litecoin/.embed?limit=20&amp;t=all&amp;bordercolor=000" type="text/javascript"></script>
+          <script src="https://www.reddit.com/r/Litecoin/.embed?limit=20&amp;t=all&amp;bordercolor=000&amp;target=blank" type="text/javascript"></script>
         </div>
         <div class="col-sm-4 col-social-container feedgrabbr_widget" id="fgid_a02e73e8ffc8728c4309b6fc0"></div>
           <script>if (typeof (fg_widgets) === "undefined") fg_widgets = new Array(); fg_widgets.push("fgid_a02e73e8ffc8728c4309b6fc0");</script>

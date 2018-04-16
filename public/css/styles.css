@@ -14,6 +14,16 @@ table {
 td {
     width: 25%;
 }
+.btn-dark {
+    background: #444;
+    color: #fff;
+    border-color: en(#444, 5%);
+}
+.btn-dark:hover {
+    background: #5e5e5e;
+    color: #fff;
+    border-color: #444;
+}
 .change {
     color: red;
 }
