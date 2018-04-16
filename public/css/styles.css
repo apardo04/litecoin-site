@@ -16,16 +16,16 @@ td {
 }
 .btn-dark {
     background: #444;
-    color: #fff;
+    color: #fff !important;
     border-color: #444;
 }
 .btn-dark:hover {
     background: #337ab7;
-    color: white !important;
+    color: #fff !important;
 }
 .active-btn {
     background: #337ab7;
-    color: white;
+    color: #fff !important;
 }
 .change {
     color: red;
