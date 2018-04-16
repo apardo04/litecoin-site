@@ -27,6 +27,20 @@ $(document).ready(function() {
     if (change_1h >= 0)
         $('#change_1h').css('color', '#40ba00')
 
+    $('#usd-chart-btn').click(function() {
+        $('#btc-chart-btn').removeClass('active-btn');
+        $(this).toggleClass('active-btn');
+        $('#ltc-btc-chart').hide();
+        $('#ltc-usd-chart').toggle();
+    });
+
+    $('#btc-chart-btn').click(function() {
+        $('#usd-chart-btn').removeClass('active-btn');
+        $(this).toggleClass('active-btn');
+        $('#ltc-usd-chart').hide();
+        $('#ltc-btc-chart').toggle();
+    });
+
     $('.donationButton').click(function() {
         $('#donationsModal').show();
     });
